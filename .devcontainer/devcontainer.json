@@ -1,0 +1,45 @@
+{
+    "name": "Shenzhen-innoX-2024wc",
+    "image": "registry.cn-hangzhou.aliyuncs.com/wzx1210/innox2024_wc:v3.0.3",
+    // "image" : "arm64v8/ros:noetic-perception",
+    // "features": {
+    //     "ghcr.io/devcontainers/features/desktop-lite:1": {}
+    // },
+    "runArgs": [
+        "--init",
+        // "--network=host",export DISPLAY=:0.0
+        "--user=root",
+        "--shm-size=2g",
+        // 使用 X11 进行窗口转发
+        // "-e", "DISPLAY=${env:DISPLAY}",
+        "-e",
+        "DISPLAY=:0.0",
+        "-v",
+        "/tmp/.X11-unix:/tmp/.X11-unix",
+        //（如果你的电脑里没有此设备，请注释此命令，否则导致无法启动。--device=本机逻辑设备名[按实际设置]:容器逻辑设备名[不要改动]）
+        "--device=/dev/ttyACM0:/dev/robomaster",
+        "--device=/dev/video0:/dev/video0",
+    ],
+    // "forwardPorts": [
+    //     6080
+    // ],
+    // "portsAttributes": {
+    //     "6080": {
+    //         "label": "Web VNC"
+    //     }
+    // },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-iot.vscode-ros",
+                "twxs.cmake",
+                "MS-CEINTL.vscode-language-pack-zh-hans",
+                "yzhang.markdown-all-in-one",
+                "ms-vscode.cmake-tools",
+                "ms-vscode.cpptools-extension-pack"
+            ]
+        }
+    }
+    // "postStartCommand": ["/usr/local/share/desktop-init.sh"]
+}

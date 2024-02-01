@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/opt/ros/noetic/include/**",
+                "/workspaces/Shenzhen_innoX_2024wc_ws/devel/include/**",
+                "/workspaces/Shenzhen_innoX_2024wc_ws/src/apriltags2/include/**",
+                "/workspaces/Shenzhen_innoX_2024wc_ws/src/apriltags2_ros/include/**",
+                "/workspaces/Shenzhen_innoX_2024wc_ws/src/map_server/include/**",
+                "/workspaces/Shenzhen_innoX_2024wc_ws/src/odom_calib/include/**",
+                "/workspaces/Shenzhen_innoX_2024wc_ws/src/simple_robot/include/**",
+                "/workspaces/Shenzhen_innoX_2024wc_ws/src/usb_cam/include/**",
+                "/workspaces/Shenzhen_innoX_2024wc_ws/src/mavlink2ros/include/FishCom/**",
+                "/usr/include/**",
+                "/workspaces/Shenzhen_innoX_2024wc_ws/src/serial/include"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/aarch64-linux-gnu-gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
+}
