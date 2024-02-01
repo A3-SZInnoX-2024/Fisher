@@ -1,0 +1,3 @@
+[submodule "src/locate"]
+	path = src/locate
+	url = https://github.com/A3-SZInnoX-2024/localization.git
