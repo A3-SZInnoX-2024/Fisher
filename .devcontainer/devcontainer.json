@@ -17,8 +17,9 @@
         "-v",
         "/tmp/.X11-unix:/tmp/.X11-unix",
         //（如果你的电脑里没有此设备，请注释此命令，否则导致无法启动。--device=本机逻辑设备名[按实际设置]:容器逻辑设备名[不要改动]）
-        "--device=/dev/ttyACM0:/dev/robomaster",
+        // "--device=/dev/ttyACM0:/dev/robomaster",
         "--device=/dev/video0:/dev/video0",
+        "--device=/dev/ttyS8:/dev/serial"
     ],
     // "forwardPorts": [
     //     6080
